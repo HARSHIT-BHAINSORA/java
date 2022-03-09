@@ -59,12 +59,12 @@ class Account {
 
             switch (ch) {
                 case 1:
-                    System.out.println("Enter the amount you wnat to deposit");
+                    System.out.println("Enter the amount you want to deposit");
                     int d = sc.nextInt();
                     p.deposit(d);
                     break;
                 case 2:
-                    System.out.println("Enter the amount you wnat to withdraw");
+                    System.out.println("Enter the amount you want to withdraw");
                     int w = sc.nextInt();
                     p.withdraw(w);
                     break;

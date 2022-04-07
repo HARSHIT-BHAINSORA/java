@@ -3,14 +3,14 @@
 class Student {
     
 
-    void set(String name, int rollNo, String unversityName, String branch) {
+    void setDetail(String name, int rollNo, String unversityName, String branch) {
         this.name = name;
         this.rollNo = rollNo;
         this.unversityName = unversityName;
         this.branch = branch;
     }
 
-    void display() {
+    void showDetail() {
         System.out.println(name + " " + rollNo + " " + unversityName + " " + branch);
     }
 

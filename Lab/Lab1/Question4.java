@@ -1,52 +1,61 @@
 import java.util.Scanner;
-class Employee{
-    int Id;
+
+class Employee {
+    int id;
     String name;
     String department;
     int salary;
 
-    Employee(){
+    Employee() {
 
     }
 
-    Employee(int id , String name ,String department , int salary){
+    Employee(int id, String name, String department, int salary) {
         this.id = id;
-        this.name = name ;
+        this.name = name;
         this.department = department;
-        this.salary = salary; 
+        this.salary = salary;
     }
 
-    void setDetail(int id , String name ,String department , int salary)
-    {
+    void setDetails(int id, String name, String department, int salary) {
         this.id = id;
-        this.name = name ;
+        this.name = name;
         this.department = department;
-        this.salary = salary;  
+        this.salary = salary;
     }
 
-    void showDetail()
-    {
-        System.out.println(id + " " name  + " " + department + " " + salary + " ");
-    } 
+    void showDetails() {
+        System.out.println(id + " " + name + " " + department + " " + salary + " ");
+    }
 }
 
-class Main{
-    Employee e1 = new Employee();
-    
-    Scanner sc = new Scanner(System.in);
+class Main {
 
-    System.out.print("Enter your name");
-    String name = sc.nextLine();
+    public static void main(String args[]) {
 
-    System.out.println("Enter the Your id");
-    int id = sc.nextInt();
+        Employee e1 = new Employee();
 
-    System.out.println("Enter your department");
-    String department = sc.nextLine();
+        Scanner sc = new Scanner(System.in);
 
-    System.out,println("Enter your salary");
-    int salary = sc.nextInt();
+        System.out.print("Enter your name");
+        String name = sc.nextLine();
 
-    set
+        System.out.println("Enter the Your id");
+        int id = sc.nextInt();
+
+        System.out.println("Enter your department");
+        String department = sc.next();
+
+        System.out.println("Enter your salary");
+        int salary = sc.nextInt();
+
+        e1.setDetails(id, name, department, salary);
+        e1.showDetails();
+
+        Employee e2 = new Employee(2001831, "Sumit", "wipro", 55000);
+        e2.showDetails();
+
+        sc.close();
+    }
 
 }

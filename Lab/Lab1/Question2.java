@@ -1,5 +1,5 @@
 // Banking System
-// Usnig keyboard
+// Using keyboard
 import java.util.Scanner;
 
 class Account {

@@ -8,7 +8,6 @@ class Student {
     void setDetails(String name, int rollNo, String branch) {
         this.name = name;
         this.rollNo = rollNo;
-
         this.branch = branch;
     }
 

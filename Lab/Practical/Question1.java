@@ -3,19 +3,19 @@
 class Student {
     
     String name ;
-    int rollNo;
+    int id;
     String unversityName;
     String branch; 
 
-    void setDetails(String name, int rollNo, String unversityName, String branch) {
+    void setDetails(String name, int id, String unversityName, String branch) {
         this.name = name;
-        this.rollNo = rollNo;
+        this.id = id;
         this.unversityName = unversityName;
         this.branch = branch;
     }
 
     void showDetails() {
-        System.out.println(name + " " + rollNo + " " + unversityName + " " + branch);
+        System.out.println(name + " " + id + " " + unversityName + " " + branch);
     }
 
     public static void main(String args[]) {

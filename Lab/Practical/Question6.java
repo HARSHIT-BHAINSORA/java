@@ -18,14 +18,14 @@ class Functions{
 
         // find index at second 'a'
 
-        System.out.println(s.lastIndexOf('a')) 
+        System.out.println(s.lastIndexOf('a')); 
 
         // Compare 
 
         System.out.println(s.equals("JAVA"));
 
         // Compare ignoring case
-        System.out.println(s.equalsIgnore("JAVA"));
+        System.out.println(s.equalsIgnoreCase("JAVA"));
 
         //index of first a from last
         System.out.println(s.lastIndexOf('a', 2));

@@ -1,0 +1,99 @@
+Thread priority
+
+bydefault - thread number is  5
+
+t1.setPriority(num);
+t1.getPriority();
+
+
+------------------------------------------------------------
+-> synchronizing multiple thread in java(Intera thread communication)
+
+Issue - in multi threading two or more thread within a 
+program access or try to access same resource.
+
+
+ eg : Banking system
+
+ suitation - two thread(person) are access same account 
+ and they without draw money at same time - possibility
+ of data loos.
+
+ -> here come the synchronizing
+
+
+ import java.util.Scanner;
+
+class Account {
+
+private int bal;
+
+public Account(int bal){
+	this.bal = bal;
+}
+
+public boolean isBalance(int w){
+	
+	if(bal > w)
+		return (true);
+	else
+		return false;
+}
+
+public void withdraw(int amt)
+{
+	bal = bal -amt;
+	System.out.println("Withdraw money is " + amt);
+	System.out.println("Your balance is " + bal);
+
+	}
+}
+
+class Customer implement Runnable{
+
+	private Account acc;
+	public Customer(Account acc)
+	{
+		this.acc = acc;
+	}
+
+	public void run(){
+	Scanner kb = new Scanner("Enter amount to withdraw");
+	int amt = kb.nextInt();
+
+	if(acc.isBalance(amt);
+	{
+		acc.withdraw(amt);
+	}
+
+	else
+		System.out.println("Insufficient Balance");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
